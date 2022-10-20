@@ -1,0 +1,12 @@
+C:\Users\Helena\source\repos\ControlEstacionamiento\bin\Debug\ControlEstacionamiento.exe.config
+C:\Users\Helena\source\repos\ControlEstacionamiento\bin\Debug\ControlEstacionamiento.exe
+C:\Users\Helena\source\repos\ControlEstacionamiento\bin\Debug\ControlEstacionamiento.pdb
+C:\Users\Helena\source\repos\ControlEstacionamiento\obj\Debug\ControlEstacionamiento.csproj.AssemblyReference.cache
+C:\Users\Helena\source\repos\ControlEstacionamiento\obj\Debug\ControlEstacionamiento.csproj.SuggestedBindingRedirects.cache
+C:\Users\Helena\source\repos\ControlEstacionamiento\obj\Debug\ControlEstacionamiento.Inicio.resources
+C:\Users\Helena\source\repos\ControlEstacionamiento\obj\Debug\ControlEstacionamiento.Properties.Resources.resources
+C:\Users\Helena\source\repos\ControlEstacionamiento\obj\Debug\ControlEstacionamiento.csproj.GenerateResource.cache
+C:\Users\Helena\source\repos\ControlEstacionamiento\obj\Debug\ControlEstacionamiento.csproj.CoreCompileInputs.cache
+C:\Users\Helena\source\repos\ControlEstacionamiento\obj\Debug\ControlEstacionamiento.exe
+C:\Users\Helena\source\repos\ControlEstacionamiento\obj\Debug\ControlEstacionamiento.pdb
+C:\Users\Helena\source\repos\ControlEstacionamiento\obj\Debug\ControlEstacionamiento.Admin.resources
