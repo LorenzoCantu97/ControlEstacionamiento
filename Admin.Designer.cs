@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.label1 = new System.Windows.Forms.Label();
             this.saludo = new System.Windows.Forms.Label();
-            this.estacionamiento = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.libres = new System.Windows.Forms.Label();
             this.ocupados = new System.Windows.Forms.Label();
+            this.estacionamiento = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.estacionamiento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -45,7 +45,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Perpetua", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label1.Location = new System.Drawing.Point(112, 14);
+            this.label1.Location = new System.Drawing.Point(98, 17);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(391, 36);
@@ -57,12 +57,45 @@
             this.saludo.AutoSize = true;
             this.saludo.Font = new System.Drawing.Font("Perpetua", 27.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saludo.ForeColor = System.Drawing.Color.DarkGreen;
-            this.saludo.Location = new System.Drawing.Point(112, 45);
+            this.saludo.Location = new System.Drawing.Point(98, 48);
             this.saludo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.saludo.Name = "saludo";
-            this.saludo.Size = new System.Drawing.Size(277, 42);
+            this.saludo.Size = new System.Drawing.Size(250, 42);
             this.saludo.TabIndex = 6;
-            this.saludo.Text = "Bienvenido Usuario : ";
+            this.saludo.Text = "Bienvenido Admin  ";
+            // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnCerrarSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(14, 389);
+            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(154, 32);
+            this.btnCerrarSesion.TabIndex = 8;
+            this.btnCerrarSesion.Text = "Cerrar Sesion ";
+            this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
+            // 
+            // libres
+            // 
+            this.libres.AutoSize = true;
+            this.libres.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.libres.Location = new System.Drawing.Point(45, 150);
+            this.libres.Name = "libres";
+            this.libres.Size = new System.Drawing.Size(108, 19);
+            this.libres.TabIndex = 9;
+            this.libres.Text = "Libres : ";
+            // 
+            // ocupados
+            // 
+            this.ocupados.AutoSize = true;
+            this.ocupados.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ocupados.Location = new System.Drawing.Point(23, 192);
+            this.ocupados.Name = "ocupados";
+            this.ocupados.Size = new System.Drawing.Size(130, 19);
+            this.ocupados.TabIndex = 10;
+            this.ocupados.Text = "Ocupados : ";
             // 
             // estacionamiento
             // 
@@ -79,46 +112,13 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::ControlEstacionamiento.Properties.Resources.car_23964;
-            this.pictureBox2.Location = new System.Drawing.Point(13, 14);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 17);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(78, 75);
+            this.pictureBox2.Size = new System.Drawing.Size(78, 80);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
-            // 
-            // btnCerrarSesion
-            // 
-            this.btnCerrarSesion.BackColor = System.Drawing.Color.DarkSalmon;
-            this.btnCerrarSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(14, 389);
-            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(154, 32);
-            this.btnCerrarSesion.TabIndex = 8;
-            this.btnCerrarSesion.Text = "Cerrar Sesion ";
-            this.btnCerrarSesion.UseVisualStyleBackColor = false;
-            // 
-            // libres
-            // 
-            this.libres.AutoSize = true;
-            this.libres.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.libres.Location = new System.Drawing.Point(45, 150);
-            this.libres.Name = "libres";
-            this.libres.Size = new System.Drawing.Size(108, 19);
-            this.libres.TabIndex = 9;
-            this.libres.Text = "Libres : ";
-            this.libres.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // ocupados
-            // 
-            this.ocupados.AutoSize = true;
-            this.ocupados.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ocupados.Location = new System.Drawing.Point(23, 192);
-            this.ocupados.Name = "ocupados";
-            this.ocupados.Size = new System.Drawing.Size(130, 19);
-            this.ocupados.TabIndex = 10;
-            this.ocupados.Text = "Ocupados : ";
             // 
             // Admin
             // 
@@ -138,6 +138,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";

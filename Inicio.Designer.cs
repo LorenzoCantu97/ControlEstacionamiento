@@ -66,7 +66,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Perpetua", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label1.Location = new System.Drawing.Point(96, 17);
+            this.label1.Location = new System.Drawing.Point(98, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(391, 36);
             this.label1.TabIndex = 2;
@@ -84,6 +84,7 @@
             // 
             this.inputPwd.Location = new System.Drawing.Point(174, 157);
             this.inputPwd.Name = "inputPwd";
+            this.inputPwd.PasswordChar = '*';
             this.inputPwd.Size = new System.Drawing.Size(165, 38);
             this.inputPwd.TabIndex = 5;
             // 
@@ -118,7 +119,7 @@
             this.pictureBox1.Image = global::ControlEstacionamiento.Properties.Resources.car_23964;
             this.pictureBox1.Location = new System.Drawing.Point(12, 17);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(78, 75);
+            this.pictureBox1.Size = new System.Drawing.Size(78, 80);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;

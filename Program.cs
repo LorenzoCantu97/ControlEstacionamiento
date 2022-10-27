@@ -11,12 +11,13 @@ namespace ControlEstacionamiento
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
+        public static Inicio Inicio;
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Inicio());
+            Application.Run(Inicio = new Inicio());
         }
     }
 }

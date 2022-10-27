@@ -10,3 +10,4 @@ C:\Users\Helena\source\repos\ControlEstacionamiento\obj\Debug\ControlEstacionami
 C:\Users\Helena\source\repos\ControlEstacionamiento\obj\Debug\ControlEstacionamiento.exe
 C:\Users\Helena\source\repos\ControlEstacionamiento\obj\Debug\ControlEstacionamiento.pdb
 C:\Users\Helena\source\repos\ControlEstacionamiento\obj\Debug\ControlEstacionamiento.Admin.resources
+C:\Users\Helena\source\repos\ControlEstacionamiento\obj\Debug\ControlEstacionamiento.Usuario.resources
