@@ -28,16 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.label1 = new System.Windows.Forms.Label();
             this.saludo = new System.Windows.Forms.Label();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.labelLibres = new System.Windows.Forms.Label();
+            this.labelOcupados = new System.Windows.Forms.Label();
+            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.libres = new System.Windows.Forms.Label();
-            this.ocupados = new System.Windows.Forms.Label();
+            this.auto2 = new System.Windows.Forms.PictureBox();
+            this.auto1 = new System.Windows.Forms.PictureBox();
+            this.auto0 = new System.Windows.Forms.PictureBox();
             this.estacionamiento = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.auto3 = new System.Windows.Forms.PictureBox();
+            this.ocupados = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.auto2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.auto1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.auto0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.estacionamiento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.auto3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -77,25 +89,68 @@
             this.btnCerrarSesion.UseVisualStyleBackColor = false;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
+            // labelLibres
+            // 
+            this.labelLibres.AutoSize = true;
+            this.labelLibres.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLibres.Location = new System.Drawing.Point(45, 150);
+            this.labelLibres.Name = "labelLibres";
+            this.labelLibres.Size = new System.Drawing.Size(108, 19);
+            this.labelLibres.TabIndex = 9;
+            this.labelLibres.Text = "Libres : ";
+            // 
+            // labelOcupados
+            // 
+            this.labelOcupados.AutoSize = true;
+            this.labelOcupados.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelOcupados.Location = new System.Drawing.Point(23, 192);
+            this.labelOcupados.Name = "labelOcupados";
+            this.labelOcupados.Size = new System.Drawing.Size(130, 19);
+            this.labelOcupados.TabIndex = 10;
+            this.labelOcupados.Text = "Ocupados : ";
+            // 
             // libres
             // 
             this.libres.AutoSize = true;
-            this.libres.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.libres.Location = new System.Drawing.Point(45, 150);
+            this.libres.Font = new System.Drawing.Font("Lucida Console", 14.25F);
+            this.libres.Location = new System.Drawing.Point(159, 150);
             this.libres.Name = "libres";
-            this.libres.Size = new System.Drawing.Size(108, 19);
-            this.libres.TabIndex = 9;
-            this.libres.Text = "Libres : ";
+            this.libres.Size = new System.Drawing.Size(0, 19);
+            this.libres.TabIndex = 11;
+            this.libres.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ocupados
+            // auto2
             // 
-            this.ocupados.AutoSize = true;
-            this.ocupados.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ocupados.Location = new System.Drawing.Point(23, 192);
-            this.ocupados.Name = "ocupados";
-            this.ocupados.Size = new System.Drawing.Size(130, 19);
-            this.ocupados.TabIndex = 10;
-            this.ocupados.Text = "Ocupados : ";
+            this.auto2.BackColor = System.Drawing.Color.White;
+            this.auto2.Image = global::ControlEstacionamiento.Properties.Resources.autoInvertido1;
+            this.auto2.Location = new System.Drawing.Point(339, 268);
+            this.auto2.Name = "auto2";
+            this.auto2.Size = new System.Drawing.Size(64, 108);
+            this.auto2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.auto2.TabIndex = 14;
+            this.auto2.TabStop = false;
+            // 
+            // auto1
+            // 
+            this.auto1.BackColor = System.Drawing.Color.White;
+            this.auto1.Image = global::ControlEstacionamiento.Properties.Resources.auto;
+            this.auto1.Location = new System.Drawing.Point(434, 134);
+            this.auto1.Name = "auto1";
+            this.auto1.Size = new System.Drawing.Size(64, 108);
+            this.auto1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.auto1.TabIndex = 13;
+            this.auto1.TabStop = false;
+            // 
+            // auto0
+            // 
+            this.auto0.BackColor = System.Drawing.Color.White;
+            this.auto0.Image = global::ControlEstacionamiento.Properties.Resources.auto;
+            this.auto0.Location = new System.Drawing.Point(339, 134);
+            this.auto0.Name = "auto0";
+            this.auto0.Size = new System.Drawing.Size(64, 108);
+            this.auto0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.auto0.TabIndex = 12;
+            this.auto0.TabStop = false;
             // 
             // estacionamiento
             // 
@@ -120,6 +175,26 @@
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
+            // auto3
+            // 
+            this.auto3.BackColor = System.Drawing.Color.White;
+            this.auto3.Image = global::ControlEstacionamiento.Properties.Resources.autoInvertido1;
+            this.auto3.Location = new System.Drawing.Point(434, 268);
+            this.auto3.Name = "auto3";
+            this.auto3.Size = new System.Drawing.Size(64, 108);
+            this.auto3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.auto3.TabIndex = 15;
+            this.auto3.TabStop = false;
+            // 
+            // ocupados
+            // 
+            this.ocupados.AutoSize = true;
+            this.ocupados.Font = new System.Drawing.Font("Lucida Console", 14.25F);
+            this.ocupados.Location = new System.Drawing.Point(159, 192);
+            this.ocupados.Name = "ocupados";
+            this.ocupados.Size = new System.Drawing.Size(0, 19);
+            this.ocupados.TabIndex = 16;
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 11F);
@@ -127,7 +202,13 @@
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(861, 433);
             this.Controls.Add(this.ocupados);
+            this.Controls.Add(this.auto3);
+            this.Controls.Add(this.auto2);
+            this.Controls.Add(this.auto1);
+            this.Controls.Add(this.auto0);
             this.Controls.Add(this.libres);
+            this.Controls.Add(this.labelOcupados);
+            this.Controls.Add(this.labelLibres);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.estacionamiento);
             this.Controls.Add(this.saludo);
@@ -142,9 +223,14 @@
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Admin_FormClosed);
             this.Load += new System.EventHandler(this.Admin_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.auto2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.auto1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.auto0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.estacionamiento)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.auto3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,7 +242,14 @@
         private System.Windows.Forms.Label saludo;
         private System.Windows.Forms.PictureBox estacionamiento;
         private System.Windows.Forms.Button btnCerrarSesion;
+        private System.Windows.Forms.Label labelLibres;
+        private System.Windows.Forms.Label labelOcupados;
+        private System.IO.Ports.SerialPort serialPort1;
         private System.Windows.Forms.Label libres;
+        private System.Windows.Forms.PictureBox auto0;
+        private System.Windows.Forms.PictureBox auto1;
+        private System.Windows.Forms.PictureBox auto2;
+        private System.Windows.Forms.PictureBox auto3;
         private System.Windows.Forms.Label ocupados;
     }
 }
