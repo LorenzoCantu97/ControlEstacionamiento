@@ -19,12 +19,14 @@ namespace ControlEstacionamiento
             InitializeComponent();       
         }
 
+        //Inhabilita botón de login
         private void Inicio_Load(object sender, EventArgs e)
         {            
             inputId.Focus();
             btnLog.Enabled = false;
         }
 
+        //Función para iniciar sesión
         private void btnLog_Click(object sender, EventArgs e)
         {
             string idAdmin = "1001";
@@ -45,11 +47,13 @@ namespace ControlEstacionamiento
             }
         }
 
+        //Cierra el programa
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        //Si todo es correcto, habilita el botón login
         private void controlBotones()
         {
             if (inputId.Text.All(Char.IsNumber) && inputId.Text.Length == 4)
@@ -74,11 +78,13 @@ namespace ControlEstacionamiento
             }
         }
 
+        //Evento que manda a llamar "controlBotones()" cada que cambia el texto del id
         private void inputId_TextChanged(object sender, EventArgs e)
         {
             controlBotones();
         }
 
+        //Se manda a llamar al cerrar sesión para volver a ventana Inicio
         public void showInicio()
         {
             inputId.Text = "";

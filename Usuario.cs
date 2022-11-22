@@ -14,8 +14,11 @@ namespace ControlEstacionamiento
 {
     public partial class Usuario : Form
     {
+        //"cerrado" se utiliza como señalador si está abierto o cerrado éste forms
         bool cerrado = false;
         string idUsuario;
+
+        //Al inicializar la clase es necesario abrir la comunicación serial con sus propiedades
         public Usuario(string id)
         {
             InitializeComponent();
@@ -34,6 +37,7 @@ namespace ControlEstacionamiento
             }
         }
 
+        //Al cargar el forms, oculta los carros, recibe el id e inicia la comunicación serial
         private void Usuario_Load(object sender, EventArgs e)
         {
             saludo.Text += idUsuario;
@@ -45,12 +49,14 @@ namespace ControlEstacionamiento
             hilo.Start();
         }
 
+        //Cierra el forms y abre "Inicio.cs"
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
             Program.Inicio.showInicio();
             this.Close();
         }
 
+        //Función utilizada en thread para comunicación serial. Manda a llamar "contarCarros()"
         private void escucharSerial()
         {
             while (!cerrado)
@@ -67,6 +73,7 @@ namespace ControlEstacionamiento
             }
         }
 
+        //Hace el cálculo de los carros existentes y los muestra en pantalla
         private void contarCarros(string carros)
         {
             int ocupado = 0;
@@ -98,6 +105,7 @@ namespace ControlEstacionamiento
                 }));
         }
 
+        //Muestra el carro según los parametros recibidos
         private void dibujarCarro(int posicion)
         {
             switch (posicion)
@@ -132,6 +140,7 @@ namespace ControlEstacionamiento
             }
         }
 
+        //Borra el carro según los parametros recibidos
         private void borrarCarro(int posicion)
         {
             switch (posicion)
@@ -166,6 +175,7 @@ namespace ControlEstacionamiento
             }
         }
 
+        //Cierra el puerto serial y cambia el valor de la variable "cerrado", que a su vez termina la comunicación serial
         private void Usuario_FormClosed(object sender, FormClosedEventArgs e)
         {
             cerrado = true;

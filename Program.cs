@@ -11,6 +11,8 @@ namespace ControlEstacionamiento
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
+        
+        ///Se crea la clase en Program.cs para manipular ventana Usuario y Admin sin cerrar programa.
         public static Inicio Inicio;
         [STAThread]
         static void Main()
